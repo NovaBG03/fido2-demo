@@ -1,0 +1,26 @@
+{
+  "name": "fido2-demo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun run build.ts",
+    "dev": "bun run build.ts && bun run server.ts",
+    "server": "bun run server.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "bun-plugin-html": "^2.2.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@simplewebauthn/browser": "^13.3.0",
+    "@simplewebauthn/server": "^13.3.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
